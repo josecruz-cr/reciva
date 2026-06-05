@@ -619,6 +619,20 @@
   .footer-logos img { height: 38px; filter: brightness(0) invert(1); opacity: 0.4; }
   .footer-logos img.reciva { filter: none; opacity: 0.5; }
 
+  /* ── LINKEDIN AVATAR LINK ───────────────── */
+  a.ponente-avatar-link {
+    display: inline-block; text-decoration: none;
+  }
+  a.ponente-avatar-link .ponente-avatar {
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  a.ponente-avatar-link:hover .ponente-avatar {
+    opacity: 0.82;
+    transform: scale(1.07);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  }
+
   /* ── RESPONSIVE ─────────────────────────── */
   @media (max-width: 900px) {
     nav { padding: 12px 20px; }
@@ -697,12 +711,12 @@
       <div class="hero-divider"></div>
       <div class="hero-meta-item">
         <span class="hero-meta-label">Modalidad</span>
-        <span class="hero-meta-value">Presencial + Transmisión</span>
+        <span class="hero-meta-value">Presencial</span>
       </div>
     </div>
 
     <div class="hero-buttons">
-      <a href="#abstract" class="btn-primary">📄 Enviar Abstract</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBr5jarqJ-j_gNAf01b6WQ2D1TZYAJ3VMMESKL93x-peVL7w/viewform" target="_blank" class="btn-primary">📄 Enviar Abstract</a>
       <a href="#agenda" class="btn-outline">Ver Programa</a>
     </div>
   </div>
@@ -785,7 +799,7 @@
         <span class="costa-rica-flag">🇨🇷</span>
         <h3>Universidad de Costa Rica</h3>
         <p>Facultad de Ingeniería · Ciudad Universitaria Rodrigo Facio · San José, Costa Rica</p>
-        <p style="margin-top:10px; font-size:0.78rem; opacity:0.55">26 y 27 de noviembre, 2026 · Dos auditorios con transmisión en vivo</p>
+        <p style="margin-top:10px; font-size:0.78rem; opacity:0.55">26 y 27 de noviembre, 2026 · Dos auditorios</p>
         <div class="stat-row">
           <div class="stat-item">
             <span class="stat-num">2</span>
@@ -953,7 +967,7 @@
     </div>
   </div>
   <p style="text-align:center; margin-top:20px; font-size:0.78rem; color:#8a9a94; max-width:600px; margin-left:auto; margin-right:auto; line-height:1.6;">
-    ⚡ Las actividades se realizarán en los auditorios de la Facultad de Ingeniería, UCR, con transmisión en vivo entre salas. El programa puede estar sujeto a ajustes.
+    ⚡ Las actividades se realizarán en los auditorios de la Facultad de Ingeniería, UCR. El programa puede estar sujeto a ajustes.
   </p>
 </section>
 
@@ -1009,39 +1023,51 @@
   </div>
   <div class="ponentes-grid">
     <div class="ponente-card">
-      <div class="ponente-avatar av-azul">RQ</div>
+      <a href="https://www.linkedin.com/in/roberto-quirós-698354221/" target="_blank" class="ponente-avatar-link">
+        <div class="ponente-avatar av-azul">RQ</div>
+      </a>
       <h4>Dr. Roberto Quirós Vargas</h4>
       <div class="role">Coordinador General</div>
-      <div class="inst">Docente e Investigador · Escuela de Ingeniería Industrial · Universidad de Costa Rica</div>
+      <div class="inst">Universidad de Costa Rica</div>
     </div>
     <div class="ponente-card">
-      <div class="ponente-avatar av-verde">EC</div>
+      <a href="https://www.linkedin.com/in/erick-centeno-mora-84008551/" target="_blank" class="ponente-avatar-link">
+        <div class="ponente-avatar av-verde">EC</div>
+      </a>
       <h4>Dr. Erick Centeno Mora</h4>
       <div class="role">Co-coordinador</div>
-      <div class="inst">Docente e investigador · Escuela de Ingeniería Civil · Universidad de Costa Rica</div>
+      <div class="inst">Universidad de Costa Rica</div>
     </div>
     <div class="ponente-card">
-      <div class="ponente-avatar av-agua">MR</div>
+      <a href="https://www.linkedin.com/in/maría-josé-rodríguez-vásquez-1a9063124/" target="_blank" class="ponente-avatar-link">
+        <div class="ponente-avatar av-agua">MR</div>
+      </a>
       <h4>Dra. María José Rodríguez Vásquez</h4>
       <div class="role">Comité Científico</div>
-      <div class="inst">Docente e investigadora · Escuela de Ingeniería de Biosistemas · Universidad de Costa Rica</div>
+      <div class="inst">Universidad de Costa Rica</div>
     </div>
     <div class="ponente-card">
-      <div class="ponente-avatar av-lima">CM</div>
-      <h4>MSc. Carolina Mora Sojo</h4>
-      <div class="role">Difusión & Comunicación</div>
+      <a href="https://www.linkedin.com/in/mariacarolinamorasojo/" target="_blank" class="ponente-avatar-link">
+        <div class="ponente-avatar av-lima">MC</div>
+      </a>
+      <h4>MSc. María Carolina Mora Sojo</h4>
+      <div class="role">Miembro RECIVA</div>
       <div class="inst">Integrated Engineering Systems</div>
     </div>
     <div class="ponente-card">
-      <div class="ponente-avatar av-azul">JC</div>
-      <h4>José Daniel Cruz Ugalde</h4>
-      <div class="role">Página Web & Coord. Intl.</div>
-      <div class="inst">Investigador Avanzado en ACV · Eurecat - Centro tecnológico de Cataluña</div>
+      <a href="https://www.linkedin.com/in/jose-daniel-cruz-ugalde" target="_blank" class="ponente-avatar-link">
+        <div class="ponente-avatar av-azul">JC</div>
+      </a>
+      <h4>MSc. José Daniel Cruz Ugalde</h4>
+      <div class="role">Miembro RECIVA</div>
+      <div class="inst">Eurecat - Centre Tecnològic</div>
     </div>
     <div class="ponente-card">
-      <div class="ponente-avatar av-verde">LR</div>
-      <h4>Ing. Lucía Rodríguez</h4>
-      <div class="role">Invitaciones Institucionales</div>
+      <a href="https://www.linkedin.com/in/lucia-rodriguez-delgado/" target="_blank" class="ponente-avatar-link">
+        <div class="ponente-avatar av-verde">LR</div>
+      </a>
+      <h4>Ing. Lucía Rodríguez Delgado</h4>
+      <div class="role">Miembro RECIVA</div>
       <div class="inst">Universidad de Costa Rica</div>
     </div>
     <div class="ponente-card">
@@ -1051,14 +1077,18 @@
       <div class="inst">Universidad de Costa Rica</div>
     </div>
     <div class="ponente-card ponente-intl">
-      <div class="ponente-avatar av-lima">NC</div>
+      <a href="https://www.linkedin.com/in/dr-natalia-cano-08ab7851/" target="_blank" class="ponente-avatar-link">
+        <div class="ponente-avatar av-lima">NC</div>
+      </a>
       <h4>Natalia Cano</h4>
       <div class="role">Directora Presidenta</div>
       <div class="inst">Red Iberoamericana · Colombia</div>
       <span class="intl-badge">Internacional</span>
     </div>
     <div class="ponente-card ponente-intl">
-      <div class="ponente-avatar av-azul">EM</div>
+      <a href="https://www.linkedin.com/in/edmundo-munoz/" target="_blank" class="ponente-avatar-link">
+        <div class="ponente-avatar av-azul">EM</div>
+      </a>
       <h4>Edmundo Muñoz</h4>
       <div class="role">Experto Senior ACV</div>
       <div class="inst">Socio Fundador Red Chilena</div>
@@ -1078,7 +1108,10 @@
     </div>
     <div class="deadline-banner">
       <span class="icon">⏰</span>
-      <p>Fecha límite de entrega de resúmenes: <strong>30 de septiembre, 2026</strong></p>
+      <div>
+        <p>Fecha límite de envío de resúmenes: <strong>15 de julio, 2026</strong></p>
+        <p style="margin-top:4px;">Respuesta de aceptación: <strong>10 de agosto, 2026</strong></p>
+      </div>
     </div>
     <div class="abstract-steps">
       <div class="abstract-step">
@@ -1088,22 +1121,22 @@
       </div>
       <div class="abstract-step">
         <span class="step-num">02</span>
-        <h4>Envíe antes del 30 Sep</h4>
+        <h4>Envíe antes del 15 Jul</h4>
         <p>Por formulario en línea o correo oficial</p>
       </div>
       <div class="abstract-step">
         <span class="step-num">03</span>
         <h4>Evaluación</h4>
-        <p>El comité científico notificará en octubre 2026</p>
+        <p>El comité científico notificará el 10 de agosto, 2026</p>
       </div>
       <div class="abstract-step">
         <span class="step-num">04</span>
         <h4>Presentación 15 min</h4>
-        <p>Presencial en la UCR con transmisión</p>
+        <p>Presencial en la UCR</p>
       </div>
     </div>
     <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
-      <a href="#contacto" class="btn-primary">Enviar Abstract</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBr5jarqJ-j_gNAf01b6WQ2D1TZYAJ3VMMESKL93x-peVL7w/viewform" target="_blank" class="btn-primary">Enviar Abstract</a>
       <a href="#contacto" class="btn-outline" style="color:rgba(255,255,255,0.8)">Más información</a>
     </div>
     <p style="margin-top:20px; font-size:0.78rem; color:rgba(255,255,255,0.4);">Se contempla modalidad especial para presentación de proyectos en curso para estudiantes de pregrado y posgrado.</p>
@@ -1225,7 +1258,7 @@
         <span class="contact-icon">📄</span>
         <div>
           <h4>Envío de abstracts</h4>
-          <p>Fecha límite: 30 de septiembre, 2026<br>Extensión máxima: 200 palabras</p>
+          <p>Fecha límite de envío: 15 de julio, 2026<br>Respuesta de aceptación: 10 de agosto, 2026<br>Extensión máxima: 200 palabras</p>
         </div>
       </div>
       <div class="contact-item">
