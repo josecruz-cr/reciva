@@ -765,7 +765,7 @@
     .nav-links { display: none !important; }
     .nav-cta  { display: none; }
     .hamburger { display: flex; }
-    .nav-logos img { height: 40px; }
+    .nav-logos img { height: 46px; }
     section { padding: 60px 20px; }
     .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
     .temas-grid { grid-template-columns: 1fr 1fr; }
@@ -776,11 +776,14 @@
     footer { flex-direction: column; text-align: center; }
   }
   @media (max-width: 560px) {
-    .nav-logos .logo-ricv { display: none; }
     .temas-grid, .ponentes-grid { grid-template-columns: 1fr; }
     .abstract-steps { flex-direction: column; align-items: center; }
     .hero-meta { gap: 20px; }
     .hero-divider { display: none; }
+  }
+  @media (max-width: 400px) {
+    .nav-logos { gap: 14px; }
+    .nav-logos img { height: 38px; }
   }
 </style>
 </head>
