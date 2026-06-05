@@ -1,0 +1,20 @@
+{
+  "name": "I Simposio Nacional de ACV 2026",
+  "short_name": "Simposio ACV",
+  "description": "I Simposio Nacional de Análisis de Ciclo de Vida – RECIVA · Universidad de Costa Rica",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a2d5e",
+  "theme_color": "#0a2d5e",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "assets/logo_reciva.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "science"]
+}
