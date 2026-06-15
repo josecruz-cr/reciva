@@ -624,6 +624,44 @@
   .footer-logos img { height: 38px; filter: brightness(0) invert(1); opacity: 0.4; }
   .footer-logos img.reciva { filter: none; opacity: 0.5; }
 
+  /* ── FREE ENTRY CARD ────────────────────── */
+  .free-entry-card {
+    max-width: 640px; margin: 0 auto;
+    background: linear-gradient(145deg, #f8fdf9, #eef7f0);
+    border-radius: 20px; padding: 48px 44px; text-align: center;
+    border: 2px solid rgba(45,138,69,0.14);
+    box-shadow: 0 8px 40px rgba(45,138,69,0.09);
+  }
+  .free-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: linear-gradient(135deg, var(--verde-medio), var(--verde-selva));
+    color: white; padding: 10px 30px; border-radius: 100px;
+    font-size: 1.05rem; font-weight: 700; letter-spacing: 0.04em;
+    margin-bottom: 16px;
+  }
+  .free-tagline {
+    font-size: 1rem; color: #4a5a54; line-height: 1.65;
+    margin-bottom: 28px; max-width: 480px; margin-left: auto; margin-right: auto;
+  }
+  .free-includes {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 8px 28px; margin: 0 auto 36px; text-align: left;
+    max-width: 480px;
+  }
+  .include-item {
+    font-size: 0.88rem; color: #3d4d46;
+    padding: 5px 0; border-bottom: 1px solid rgba(45,138,69,0.1);
+  }
+  .include-item::before { content: '✓  '; color: var(--verde-medio); font-weight: 700; }
+  .free-entry-card .btn-primary { font-size: 1rem; padding: 16px 40px; }
+  .free-note {
+    margin-top: 16px; font-size: 0.78rem; color: #8a9a94; font-style: italic;
+  }
+  @media (max-width: 560px) {
+    .free-entry-card { padding: 32px 22px; }
+    .free-includes { grid-template-columns: 1fr; }
+  }
+
   /* ── LINKEDIN AVATAR LINK ───────────────── */
   a.ponente-avatar-link {
     display: inline-block; text-decoration: none;
@@ -804,7 +842,7 @@
     <li><a href="#inscripcion">Inscripción</a></li>
     <li><a href="#contacto">Contacto</a></li>
   </ul>
-  <a href="#inscripcion" class="nav-cta">Inscribirse</a>
+  <a href="https://forms.gle/GQHVs1YNSnERiRpM7" target="_blank" class="nav-cta">✍️ Pre-inscribirse</a>
   <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -853,9 +891,8 @@
     </a>
   </div>
   <div class="drawer-footer">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBr5jarqJ-j_gNAf01b6WQ2D1TZYAJ3VMMESKL93x-peVL7w/viewform"
-       target="_blank" class="btn-primary">📄 Enviar Abstract</a>
-    <p class="drawer-event-info">26 y 27 de noviembre, 2026<br>Universidad de Costa Rica · San José</p>
+    <a href="https://forms.gle/GQHVs1YNSnERiRpM7" target="_blank" class="btn-primary">✍️ Pre-inscribirse</a>
+    <p class="drawer-event-info">26 y 27 de noviembre, 2026<br>Universidad de Costa Rica · San José · Entrada gratuita</p>
   </div>
 </div>
 
@@ -900,8 +937,8 @@
     </div>
 
     <div class="hero-buttons">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBr5jarqJ-j_gNAf01b6WQ2D1TZYAJ3VMMESKL93x-peVL7w/viewform" target="_blank" class="btn-primary">📄 Enviar Abstract</a>
-      <a href="#agenda" class="btn-outline">Ver Programa</a>
+      <a href="https://forms.gle/GQHVs1YNSnERiRpM7" target="_blank" class="btn-primary">✍️ Pre-inscribirse</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdBr5jarqJ-j_gNAf01b6WQ2D1TZYAJ3VMMESKL93x-peVL7w/viewform" target="_blank" class="btn-outline">📄 Enviar Abstract</a>
     </div>
   </div>
 
@@ -1376,41 +1413,24 @@
     <div class="section-tag">Registro</div>
     <h2 class="section-title">Inscripción al <em>Simposio</em></h2>
     <div class="divider-leaf">🌿</div>
-    <p class="section-subtitle">Se contempla una cuota diferenciada. Los detalles finales serán confirmados próximamente.</p>
+    <p class="section-subtitle">El I Simposio Nacional de ACV es de participación libre y gratuita para todos los asistentes. Solo se requiere pre-inscripción.</p>
   </div>
-  <div class="pricing-grid">
-    <div class="pricing-card">
-      <div class="price-category">Estudiantes de Grado</div>
-      <span class="price-icon">🎓</span>
-      <div class="price-amount">$<span>0</span></div>
-      <div class="price-label">Entrada gratuita</div>
-      <ul class="price-items">
-        <li>Acceso completo 2 días</li>
-        <li>Coffee breaks y refrigerios</li>
-        <li>Certificado de participación</li>
-        <li>Materiales digitales</li>
-        <li>Acceso a stands y pósters</li>
-      </ul>
-      <p class="price-note">Presentación de carné estudiantil vigente</p>
+  <div class="free-entry-card">
+    <div class="free-badge">🎉 Entrada completamente gratuita</div>
+    <p class="free-tagline">
+      Académicos, estudiantes, profesionales, empresas e instituciones públicas son bienvenidos sin costo de inscripción.
+    </p>
+    <div class="free-includes">
+      <div class="include-item">Acceso completo 2 días</div>
+      <div class="include-item">Coffee breaks y refrigerios</div>
+      <div class="include-item">Certificado de participación</div>
+      <div class="include-item">Materiales digitales</div>
+      <div class="include-item">Acceso a stands y pósters</div>
+      <div class="include-item">Networking con expertos</div>
     </div>
-    <div class="pricing-card featured">
-      <div class="price-category" style="color:var(--verde-lima);">Asistentes Generales</div>
-      <span class="price-icon">🏛️</span>
-      <div class="price-amount" style="color:white;">$<span style="color:var(--verde-lima);">50</span> <span style="font-size:0.85rem; color:rgba(255,255,255,0.5);">USD</span></div>
-      <div class="price-label" style="color:rgba(255,255,255,0.5);">Profesionales, posgrado e instituciones</div>
-      <ul class="price-items" style="border-color:rgba(255,255,255,0.1);">
-        <li style="border-color:rgba(255,255,255,0.08);">Acceso completo 2 días</li>
-        <li style="border-color:rgba(255,255,255,0.08);">Coffee breaks y refrigerios</li>
-        <li style="border-color:rgba(255,255,255,0.08);">Certificado de participación</li>
-        <li style="border-color:rgba(255,255,255,0.08);">Materiales digitales</li>
-        <li style="border-color:rgba(255,255,255,0.08);">Networking con expertos</li>
-      </ul>
-      <p class="price-note" style="color:rgba(255,255,255,0.35);">Aplica para no-estudiantes de grado</p>
-    </div>
+    <a href="https://forms.gle/GQHVs1YNSnERiRpM7" target="_blank" class="btn-primary">✍️ Pre-inscribirse ahora</a>
+    <p class="free-note">Pre-inscripción requerida · Cupos limitados · 26 y 27 de noviembre, 2026</p>
   </div>
-  <p style="text-align:center; margin-top:28px; font-size:0.84rem; color:#8a9a94;">
-    Para confirmar inscripción o solicitar carta de invitación formal, contáctenos en la sección de abajo.
-  </p>
 </section>
 
 <!-- CONTACTO -->
